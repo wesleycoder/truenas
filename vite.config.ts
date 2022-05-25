@@ -5,6 +5,12 @@ import { defineConfig } from 'vite'
 import solidPlugin from 'vite-plugin-solid'
 
 export default defineConfig({
+  server: {
+    port: 9999,
+  },
+  preview: {
+    port: 9900,
+  },
   plugins: [solidPlugin()],
   test: {
     environment: 'jsdom',
